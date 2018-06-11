@@ -1,0 +1,1653 @@
+<VI syntaxVersion=11 LVversion=17008000 revision=0 name="配置文件初始化检查与创建 2.vi">
+<TITLE><NO_TITLE name="配置文件初始化检查与创建 2.vi"></TITLE>
+<HELP_PATH></HELP_PATH>
+<HELP_TAG></HELP_TAG>
+<RTM_PATH type="default"></RTM_PATH>
+<DESC></DESC>
+<CONTENT>
+	<GROUPER>
+		<PARTS>
+		</PARTS></GROUPER>
+	<CONTROL ID=91 type="路径" name="配置文件路径">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8019 order=0 type="浏览按钮">
+				<CONTROL ID=79 type="布尔" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+						<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING></STRINGS></MLABEL></PART>
+						<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+					</PARTS>
+				</CONTROL>
+			</PART>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>配置文件路径</STEXT></LABEL></PART>
+		</PARTS>
+		<PRIV>
+			<PROMPT></PROMPT>
+			<MTCH_PTN></MTCH_PTN>
+			<PTN_LBEL></PTN_LBEL>
+			<STRT_PTH><PATH type="absolute"></PATH></STRT_PTH>
+			<PTH_BTN_LBL></PTH_BTN_LBL>
+		</PRIV>
+		<DEFAULT>
+			<PATH type="absolute"></PATH>
+		</DEFAULT>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>段</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="配置文件 o">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>配置文件 o</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="静音延迟 s">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>静音延迟 s</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="屏幕键盘？">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>屏幕键盘？</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="调试模式？">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>调试模式？</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="软件版本">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>软件版本</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=83 type="簇" name="串口配置">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>串口配置</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=85 type="VISA资源名称" name="COM口">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="显示I/O名称">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>COM口</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=87 type="Enum" name="波特率">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="下拉列表文本"><MLABEL><FONT predef=DLGFONT color=100000C><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>波特率</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=100 type="自定义类型" name="定时配置-累积分段">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=83 type="簇" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=223 type="时间标识" name="目标时刻">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=8019 order=0 type="浏览按钮">
+											<CONTROL ID=79 type="布尔" >
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+										</PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>目标时刻</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值" name="间隔">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>间隔</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="单位">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>单位</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="定时模式">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时模式</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-累积分段</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=83 type="簇" name="定时配置-自动导出">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-自动导出</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=100 type="自定义类型" name="定时配置-自动导出">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=223 type="时间标识" name="目标时刻">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=8019 order=0 type="浏览按钮">
+													<CONTROL ID=79 type="布尔" >
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+												</PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>目标时刻</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="间隔">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>间隔</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=87 type="Enum" name="单位">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>单位</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=87 type="Enum" name="定时模式">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时模式</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-自动导出</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="分别导出?">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>分别导出?</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=100 type="自定义类型" name="主要探头类型">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=87 type="Enum" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>主要探头类型</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="键-杂项段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>键-杂项段</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="键-串口配置段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>键-串口配置段</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="键-累积定时配置段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>键-累积定时配置段</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="键-导出定时配置段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>键-导出定时配置段</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error out">
+		<DESC><<B>>error out<</B>> contains error information. This output provides standard error out functionality.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输出</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> describes the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="error in (no error)">
+		<DESC><<B>>error in<</B>> describes error conditions that occur before this node runs. This input provides standard error in functionality.</DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>错误输入（无错误）</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="布尔" name="status">
+				<DESC><<B>>status<</B>> is TRUE (X) if an error occurred before this node ran or FALSE (checkmark) to indicate a warning or that no error occurred before this node ran. The default is FALSE.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=22 order=0 type="布尔文本"><MLABEL><STRINGS><STRING></STRING><STRING></STRING><STRING></STRING><STRING></STRING></STRINGS></MLABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>状态</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=80 type="数值" name="code">
+				<DESC><<B>>code<</B>> is the error or warning code. The default is 0.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>代码</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="source">
+				<DESC><<B>>source<</B>> specifies the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning. The default is an empty string.</DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>源</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="模式(读取)">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>模式(读取)</STEXT></LABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=83 type="簇" name="配置文件 i">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=82 order=0 type="标题"><LABEL><STEXT>配置文件 i</STEXT></LABEL></PART>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=80 type="数值" name="静音延迟 s">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>静音延迟 s</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="屏幕键盘？">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>屏幕键盘？</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=79 type="布尔" name="调试模式？">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>调试模式？</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=81 type="字符串" name="软件版本">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>软件版本</STEXT></LABEL></PART>
+				</PARTS>
+				<DEFAULT><SAME_AS_LABEL></DEFAULT>
+			</CONTROL>
+			<CONTROL ID=83 type="簇" name="串口配置">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>串口配置</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=85 type="VISA资源名称" name="COM口">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8017 order=0 type="显示I/O名称">
+								<CONTROL ID=148 type="" >
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>COM口</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=87 type="Enum" name="波特率">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=12 order=0 type="下拉列表文本"><MLABEL><FONT predef=DLGFONT color=100000C><STRINGS></STRINGS></MLABEL></PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT><FONT predef=DLGFONT color=100000C>波特率</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=100 type="自定义类型" name="定时配置-累积分段">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=83 type="簇" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=223 type="时间标识" name="目标时刻">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=8019 order=0 type="浏览按钮">
+											<CONTROL ID=79 type="布尔" >
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+										</PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>目标时刻</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值" name="间隔">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>间隔</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="单位">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>单位</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="定时模式">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时模式</STEXT></LABEL></PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-累积分段</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=83 type="簇" name="定时配置-自动导出">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-自动导出</STEXT></LABEL></PART>
+				</PARTS>
+				<CONTENT>
+					<GROUPER>
+						<PARTS>
+						</PARTS></GROUPER>
+					<CONTROL ID=100 type="自定义类型" name="定时配置-自动导出">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=8010 order=0 type="自定义类型控件">
+								<CONTROL ID=83 type="簇" name="">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+									</PARTS>
+									<CONTENT>
+										<GROUPER>
+											<PARTS>
+											</PARTS></GROUPER>
+										<CONTROL ID=223 type="时间标识" name="目标时刻">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=8019 order=0 type="浏览按钮">
+													<CONTROL ID=79 type="布尔" >
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+												</PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>目标时刻</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=80 type="数值" name="间隔">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>间隔</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=87 type="Enum" name="单位">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>单位</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+										<CONTROL ID=87 type="Enum" name="定时模式">
+											<DESC></DESC>
+											<TIP></TIP>
+											<PARTS>
+												<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时模式</STEXT></LABEL></PART>
+											</PARTS>
+										</CONTROL>
+									</CONTENT>
+								</CONTROL>
+							</PART>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>定时配置-自动导出</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+					<CONTROL ID=79 type="布尔" name="分别导出?">
+						<DESC></DESC>
+						<TIP></TIP>
+						<PARTS>
+							<PART ID=82 order=0 type="标题"><LABEL><STEXT>分别导出?</STEXT></LABEL></PART>
+						</PARTS>
+					</CONTROL>
+				</CONTENT>
+			</CONTROL>
+			<CONTROL ID=100 type="自定义类型" name="主要探头类型">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=87 type="Enum" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+								<PART ID=82 order=0 type="标题"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</PART>
+					<PART ID=82 order=0 type="标题"><LABEL><STEXT>主要探头类型</STEXT></LABEL></PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+</CONTENT>
+<BDCONTENT>
+	<LABEL><STEXT><FONT predef=DLGFONT size=40>指定默认值</STEXT></LABEL>
+	<LABEL><STEXT><FONT predef=DLGFONT size=40>1. 给整个配置文件结构创建一个自定义类型，在这里设置好默认值。（严格自定义类型也不能锁定值）。<LF>
+2. 给所有键和段 创建自定义类型，所有的键选项标注好数据类型；<LF>
+3. 读写模式可选，写入模式会保存所有配置。</STEXT></LABEL>
+	<CONTROL ID=83 type="簇常量" name="串口配置">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=87 type="Enum" name="波特率">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=85 type="VISA资源名称" name="COM口">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8017 order=0 type="显示I/O名称">
+						<CONTROL ID=148 type="VISA USB控制输出" >
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=83 type="簇常量" name="定时配置-自动导出">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+		<CONTENT>
+			<GROUPER>
+				<PARTS>
+				</PARTS></GROUPER>
+			<CONTROL ID=79 type="假常量" name="分别导出?">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+				</PARTS>
+			</CONTROL>
+			<CONTROL ID=100 type="自定义类型" name="定时配置-自动导出">
+				<DESC></DESC>
+				<TIP></TIP>
+				<PARTS>
+					<PART ID=8010 order=0 type="自定义类型控件">
+						<CONTROL ID=83 type="簇常量" name="">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=223 type="时间标识常量" name="目标时刻">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=80 type="数值常量" name="间隔">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="单位">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=87 type="Enum" name="定时模式">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+					</PART>
+				</PARTS>
+			</CONTROL>
+		</CONTENT>
+	</CONTROL>
+	<CONTROL ID=100 type="自定义类型" name="定时配置-累积分段">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=223 type="时间标识常量" name="目标时刻">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="间隔">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=87 type="Enum" name="单位">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=87 type="Enum" name="定时模式">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="主要探头类型">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=80 type="数值常量" name="静音延迟 s">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=81 type="字符串常量" name="软件版本">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+		</PARTS>
+		<DEFAULT><SAME_AS_LABEL></DEFAULT>
+	</CONTROL>
+	<CONTROL ID=79 type="假常量" name="F">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=99 type="(Un)Bundle by Name">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=100 type="自定义类型" name="配置文件 i">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=8010 order=0 type="自定义类型控件">
+				<CONTROL ID=83 type="簇常量" name="">
+					<DESC></DESC>
+					<TIP></TIP>
+					<PARTS>
+					</PARTS>
+					<CONTENT>
+						<GROUPER>
+							<PARTS>
+							</PARTS></GROUPER>
+						<CONTROL ID=83 type="簇常量" name="定时配置-自动导出">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=79 type="假常量" name="分别导出?">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=100 type="自定义类型" name="定时配置-自动导出">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=8010 order=0 type="自定义类型控件">
+											<CONTROL ID=83 type="簇常量" name="">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+												<CONTENT>
+													<GROUPER>
+														<PARTS>
+														</PARTS></GROUPER>
+													<CONTROL ID=223 type="时间标识常量" name="目标时刻">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=80 type="数值常量" name="间隔">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=87 type="Enum" name="单位">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+														</PARTS>
+													</CONTROL>
+													<CONTROL ID=87 type="Enum" name="定时模式">
+														<DESC></DESC>
+														<TIP></TIP>
+														<PARTS>
+															<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+														</PARTS>
+													</CONTROL>
+												</CONTENT>
+											</CONTROL>
+										</PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+						<CONTROL ID=100 type="自定义类型" name="定时配置-累积分段">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=83 type="簇常量" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+										</PARTS>
+										<CONTENT>
+											<GROUPER>
+												<PARTS>
+												</PARTS></GROUPER>
+											<CONTROL ID=223 type="时间标识常量" name="目标时刻">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=80 type="数值常量" name="间隔">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=87 type="Enum" name="单位">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												</PARTS>
+											</CONTROL>
+											<CONTROL ID=87 type="Enum" name="定时模式">
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+													<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+												</PARTS>
+											</CONTROL>
+										</CONTENT>
+									</CONTROL>
+								</PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=83 type="簇常量" name="串口配置">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+							<CONTENT>
+								<GROUPER>
+									<PARTS>
+									</PARTS></GROUPER>
+								<CONTROL ID=87 type="Enum" name="波特率">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+									</PARTS>
+								</CONTROL>
+								<CONTROL ID=85 type="VISA资源名称" name="COM口">
+									<DESC></DESC>
+									<TIP></TIP>
+									<PARTS>
+										<PART ID=8017 order=0 type="显示I/O名称">
+											<CONTROL ID=148 type="VISA USB控制输出" >
+												<DESC></DESC>
+												<TIP></TIP>
+												<PARTS>
+												</PARTS>
+											</CONTROL>
+										</PART>
+									</PARTS>
+								</CONTROL>
+							</CONTENT>
+						</CONTROL>
+						<CONTROL ID=100 type="自定义类型" name="主要探头类型">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=8010 order=0 type="自定义类型控件">
+									<CONTROL ID=87 type="Enum" name="">
+										<DESC></DESC>
+										<TIP></TIP>
+										<PARTS>
+											<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+										</PARTS>
+									</CONTROL>
+								</PART>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=80 type="数值常量" name="静音延迟 s">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=81 type="字符串常量" name="软件版本">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+								<PART ID=11 order=0 type="文本"><LABEL><STEXT></STEXT></LABEL></PART>
+							</PARTS>
+							<DEFAULT><SAME_AS_LABEL></DEFAULT>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="屏幕键盘？">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+						<CONTROL ID=79 type="假常量" name="调试模式？">
+							<DESC></DESC>
+							<TIP></TIP>
+							<PARTS>
+							</PARTS>
+						</CONTROL>
+					</CONTENT>
+				</CONTROL>
+			</PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+		<DESC></DESC>
+	</NODE>
+	<CONTROL ID=79 type="假常量" name="F">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+		</PARTS>
+	</CONTROL>
+	<CONTROL ID=87 type="Enum" name="写入">
+		<DESC></DESC>
+		<TIP></TIP>
+		<PARTS>
+			<PART ID=12 order=0 type="下拉列表文本"><MLABEL><STRINGS></STRINGS></MLABEL></PART>
+		</PARTS>
+	</CONTROL>
+	<NODE ID=47 type="Function" primID=20205145 primName="等于？">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Close Config Data.vi">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=32 type="For Loop">
+		<DESC></DESC>
+		<BDCONTENT>
+			<NODE ID=44 type="Select">
+				<DESC></DESC>
+				<BDCONTENT>
+					<NODE ID=140 type="Property Node" name="键-杂项段">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=32 type="For Loop">
+						<DESC></DESC>
+						<BDCONTENT>
+							<NODE ID=44 type="Select">
+								<DESC></DESC>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, <LF>
+则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, <LF>
+则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+							</NODE>
+							<NODE ID=49 type="SubVI" subVIName="Number To Enum.vim">
+								<DESC></DESC>
+							</NODE>
+							<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>检查每个键, 存在则读取, 不存在则写入默认值, 若写入模式则强制写入</STEXT></LABEL></PART>
+						</BDCONTENT>
+					</NODE>
+					<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>杂项段</STEXT></LABEL></PART>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=140 type="Property Node" name="键-串口配置段">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=32 type="For Loop">
+						<DESC></DESC>
+						<BDCONTENT>
+							<NODE ID=44 type="Select">
+								<DESC></DESC>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+							</NODE>
+							<NODE ID=49 type="SubVI" subVIName="Number To Enum.vim">
+								<DESC></DESC>
+							</NODE>
+							<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>存在则读取, 不存在则写入默认值</STEXT></LABEL></PART>
+						</BDCONTENT>
+					</NODE>
+					<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>串口配置段</STEXT></LABEL></PART>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=140 type="Property Node" name="键-累积定时配置段">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=32 type="For Loop">
+						<DESC></DESC>
+						<BDCONTENT>
+							<NODE ID=44 type="Select">
+								<DESC></DESC>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=47 type="Function" primID=54534143 primName="强制类型转换">
+														<DESC></DESC>
+													</NODE>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, <LF>
+则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<NODE ID=47 type="Function" primID=54534143 primName="强制类型转换">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+							</NODE>
+							<NODE ID=49 type="SubVI" subVIName="Number To Enum.vim">
+								<DESC></DESC>
+							</NODE>
+							<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>存在则读取, 不存在则写入默认值</STEXT></LABEL></PART>
+						</BDCONTENT>
+					</NODE>
+					<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>累积分段定时段</STEXT></LABEL></PART>
+				</BDCONTENT>
+				<BDCONTENT>
+					<NODE ID=140 type="Property Node" name="键-导出定时配置段">
+						<DESC></DESC>
+					</NODE>
+					<NODE ID=32 type="For Loop">
+						<DESC></DESC>
+						<BDCONTENT>
+							<NODE ID=44 type="Select">
+								<DESC></DESC>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=47 type="Function" primID=54534143 primName="强制类型转换">
+														<DESC></DESC>
+													</NODE>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, <LF>
+则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<NODE ID=47 type="Function" primID=54534143 primName="强制类型转换">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+								<BDCONTENT>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=336 type="Unbundle / Bundle Element">
+										<DESC></DESC>
+									</NODE>
+									<NODE ID=333 type="Decompose-Recompose Structure">
+										<DESC></DESC>
+										<BDCONTENT>
+											<NODE ID=47 type="Function" primID=4C455342 primName="选择">
+												<DESC></DESC>
+											</NODE>
+											<NODE ID=44 type="Select">
+												<DESC></DESC>
+												<BDCONTENT>
+													<NODE ID=197 type="PolyVI" subVIName="Write Key.vi">
+														<DESC></DESC>
+													</NODE>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>没找到, 则写入默认值</STEXT></LABEL></PART>
+												</BDCONTENT>
+												<BDCONTENT>
+													<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>找到则加载</STEXT></LABEL></PART>
+												</BDCONTENT>
+											</NODE>
+										</BDCONTENT>
+									</NODE>
+									<NODE ID=197 type="PolyVI" subVIName="Read Key.vi">
+										<DESC></DESC>
+									</NODE>
+									<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT></STEXT></LABEL></PART>
+								</BDCONTENT>
+							</NODE>
+							<NODE ID=49 type="SubVI" subVIName="Number To Enum.vim">
+								<DESC></DESC>
+							</NODE>
+							<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>存在则读取, 不存在则写入默认值</STEXT></LABEL></PART>
+						</BDCONTENT>
+					</NODE>
+					<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>自动导出定时段</STEXT></LABEL></PART>
+				</BDCONTENT>
+			</NODE>
+			<NODE ID=49 type="SubVI" subVIName="Number To Enum.vim">
+				<DESC></DESC>
+			</NODE>
+			<NODE ID=49 type="SubVI" subVIName="Get Key Names.vi">
+				<DESC></DESC>
+			</NODE>
+			<PART ID=8024 order=0 type=""><LABEL><STEXT><FONT predef=DLGFONT>检查每个段</STEXT></LABEL></PART>
+			<WIRE>
+				<PART ID=16 order=0 type="名称标签"><LABEL><STEXT><FONT predef=DLGFONT>段</STEXT></LABEL></PART>
+			</WIRE>
+		</BDCONTENT>
+	</NODE>
+	<NODE ID=140 type="Property Node" name="段">
+		<DESC></DESC>
+	</NODE>
+	<NODE ID=49 type="SubVI" subVIName="Open Config Data.vi">
+		<DESC></DESC>
+	</NODE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT><FONT predef=DLGFONT>默认值</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT><FONT predef=DLGFONT>默认值</STEXT></LABEL></PART>
+	</WIRE>
+	<WIRE>
+		<PART ID=16 order=0 type="名称标签"><LABEL><STEXT><FONT predef=DLGFONT>全写入?</STEXT></LABEL></PART>
+	</WIRE>
+</BDCONTENT>
+</VI>
+
+
